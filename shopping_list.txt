@@ -1,5 +1,5 @@
 apple 3
 juice 2
 milk 1
-potato 3
+lemon 3
 peach 4
