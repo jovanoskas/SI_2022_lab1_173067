@@ -2,4 +2,4 @@ apple 3
 juice 5
 milk 1
 potato 3
-peach 4
+peach 6
