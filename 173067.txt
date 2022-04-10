@@ -1,0 +1,168 @@
+4.$ git clone https://github.com/jovanoskas/SI_lab1_173067.git
+5.
+##kreirame txt file
+$ touch shopping_list.txt
+##vnesuvame items 
+$ nano shopping_list.txt 
+##dodavame promeni
+$ git add shopping_list.txt 
+##commit message
+$ git commit -m "Add 5 items to the shopping list"
+##transfering commit
+$ git push
+6.
+##changing
+$ nano shopping_list.txt
+##dodavame promeni
+$ git add shopping_list.txt
+##commit message
+$ git commit -m "Add qunatities to the items"
+##transfering
+$ git push
+7. 
+##creating branches
+$ git branch1
+$ git branch2
+8. 
+##Dosegashni logovi
+$ git log
+commit f1c8fe268c9a1159def2d9c242e688c27ece2eaa (HEAD -> master, origin/master)
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:38:48 2022 +0200
+
+    Add qunatities to the items
+
+commit e65cd82e9680f6eb1caa86c1023ff1299829c4b8
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:37:29 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit cc3c35ac6e6dd8a2fb60ff8f7a7e402b2bdfce9d
+Author: jovanoskas <62565245+jovanoskas@users.noreply.github.com>
+Date:   Sun Apr 10 19:28:30 2022 +0200
+
+    Initial commit
+9. 
+10.
+##move to branch1
+$ git checkout branch1
+11.
+##change quantity of item5
+##access
+$ nano shopping_list.txt
+## add
+$ git add shopping_list.txt
+## commit mess
+$ git commit -m "Change quantity of item #5"
+## push
+$ git push 
+12. 
+##back to master
+$ git checkout master
+13.
+##access
+nano shopping_list.txt
+## add
+$ git add shopping_list.txt
+## commit
+$ git commit -m "Change quantity of item #2"
+##push
+$ git push
+14.
+15.
+## move to branch2 
+$ git checkout branch2
+16. 
+## change the name of item 4
+$ nano shopping_list.txt
+## add
+$ git add shopping_list.txt
+## commit
+$ git commit -m "Modify item #4"
+17.
+## logs
+$ git log
+commit c4d791f7d662370ec24ccd2530f2f7fd69df17df (HEAD -> branch2)
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:42:36 2022 +0200
+
+    Modify item #4
+
+commit f1c8fe268c9a1159def2d9c242e688c27ece2eaa
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:38:48 2022 +0200
+
+    Add qunatities to the items
+
+commit e65cd82e9680f6eb1caa86c1023ff1299829c4b8
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:37:29 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit cc3c35ac6e6dd8a2fb60ff8f7a7e402b2bdfce9d
+Author: jovanoskas <62565245+jovanoskas@users.noreply.github.com>
+Date:   Sun Apr 10 19:28:30 2022 +0200
+
+    Initial commit
+18. 
+## add item 6
+$ nano shopping_list.txt
+## add
+$ git add shopping_list.txt
+##commit
+$ git commit -m "Modify item #4 and add item #6"
+##push
+$ git push
+19. 
+##logs
+$ git log
+commit 4905ea5b9df215b87666a0c57ed5a8f305433eea (HEAD -> branch2, origin/branch2)
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:44:47 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit c4d791f7d662370ec24ccd2530f2f7fd69df17df
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:42:36 2022 +0200
+
+    Modify item #4
+
+commit f1c8fe268c9a1159def2d9c242e688c27ece2eaa
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:38:48 2022 +0200
+
+    Add qunatities to the items
+
+commit e65cd82e9680f6eb1caa86c1023ff1299829c4b8
+Author: StefaniJovanoska <sjovanoska@outlook.com>
+Date:   Sun Apr 10 19:37:29 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit cc3c35ac6e6dd8a2fb60ff8f7a7e402b2bdfce9d
+Author: jovanoskas <62565245+jovanoskas@users.noreply.github.com>
+Date:   Sun Apr 10 19:28:30 2022 +0200
+
+    Initial commit
+20. 
+##move to master
+$ git checkout master
+##merge so branch1
+$ git merge branch1
+21.
+##merge so branch2
+$ git merge branch2
+22. 
+##create the documentation
+touch 173067.txt
+## add the documentation
+nano 173067.txt
+## add
+$ git add 173067.txt
+##commit
+$ git commit -m "Add docs"
+## push 
+$ git push
